@@ -1,23 +1,6 @@
-#import pandas
-#按鈕
-#str(1) == True
-#str(0) == False
-#封面
-#介紹頁面
+
 
 print("為旅客找到合適、口俾良好且便捷交通之著名餐廳。")
-#成功進入場境1（餐廳地點）：
-
-#無法進入場境1：
-#成功進入場境2（餐廳平均消費額）：
-#無法進入場境2： 
-#分析對錯
-
-#成功進入場境3（餐廳評價）：
-
-#無法進入場境3：
-
-#Python統計分析
 
 #收集顧客數據
 age = int(input("請問您幾歲？"))
@@ -64,33 +47,9 @@ while True:
         break
     else:
         print("只能限台灣縣市，請重新輸入。")
-#匯入資料(住家)
-tp = []
-import csv
-csvfile_1 = "taipei.csv"
-if home in city_1:
-    tp.append(home)
-elif home in city_2:
-    tp.append(home)
-elif home in city_3:
-    tp.append(home)
-elif home in city_4:
-    tp.append(home)
-elif home in city_5:
-    tp.append(home)
-elif home in city_6:
-    tp.append(home)
-with open(csvfile_1,'w+',newline='') as fp:
-    writer =csv.writer(fp)
-    writer.writerrow(["北部","中部","南部","外島","其他國籍"])
-    for row in tp:
-        writer.writerow(row)
-        
 
-#到訪餐廳
-#input("請問您光顧哪家餐廳？")
-#爬蟲（必比登餐廳資料蒐集）
-from bs4 import BeatifulSoup 
+
+
 
 #問卷
 resturant_1 = int(input("請問您認為餐廳服務態度如何？（1為不滿意；5為最滿意）："))
@@ -110,7 +69,5 @@ while totel > 20:
     totel = int(resturant_1 + resturant_2 + resturant_3 + resturant_4)
 else:
     print("顧客評分：",totel, "，" ,"謝謝您的保貴意見！")
-#資料庫
-#制作統計圖表（棒形圖）：
-#Machine Learning
+
 
